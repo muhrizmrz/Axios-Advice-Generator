@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwindConfig.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="./style.js"></script>
+
+</head>
+<body>
+
+    <main class="w-full h-screen bg-DarkBlue grid place-items-center">
+        <article id="advice_comp"
+            class="transition-all ease-in-out duration-300 xl:w-1/3 lg:w-1/3 w-[90%] font-Manrope h-fit xl:pb-14 lg:pb-14 xl:pt-6 lg:pt-6 xl:px-6 lg:px-6 px-14 py-24 pb-32 relative xl:h-fit lg:h-fit bg-GrayishDarkBlue xl:rounded-xl lg:rounded-lg rounded-3xl grid place-items-center xl:gap-y-6 lg:gap-y-6 gap-y-10">
+            <p class="font-noraml text-NeonGreen text-center tracking-[0.3em] xl:text-sm lg:text-sm text-2xl uppercase">
+                Advice #<span id="id"></span></p>
+            <p id="advice"
+                class="text-LightCyan font-bold text-center xl:text-xl lg:text-xl text-5xl leading-loose capitalize">
+                </p>
+            <img src="./images/pattern-divider-desktop.svg" alt="divider" />
+            <div id="button"
+                class="hover:shadow-lg hover:shadow-NeonGreen cursor-pointer absolute xl:-bottom-4 lg:-bottom-4 -bottom-14 grid place-items-center xl:w-12 lg:w-12 xl:h-12 lg:h-12 w-32 h-32 rounded-full bg-NeonGreen">
+                <img class="xl:w-4 lg:w-4 w-12" src="./images/icon-dice.svg" alt="icon-dice" />
+            </div>
+        </article>
+    </main>
+
+
+</body>
+</html>
